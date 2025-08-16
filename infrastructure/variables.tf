@@ -18,6 +18,13 @@ variable "project" {
   type        = string
 }
 
+# Pick up from the ARM_SUBSCRIPTION_ID environment variable if not set
+variable "subscription_id" {
+  description = "The Azure subscription ID"
+  type        = string
+  default     = null
+}
+
 variable "storage_account_name" {
   description = "The name of the storage account"
   type        = string

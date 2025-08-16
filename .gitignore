@@ -36,3 +36,9 @@ terraform.rc
 **/.terraform.lock.hcl
 
 **/.DS_Store
+__debug*
+.vscode/**/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json

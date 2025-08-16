@@ -1,0 +1,21 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Launch Terratest",
+            "type": "go",
+            "request": "launch",
+            "mode": "test",
+            "program": "${workspaceFolder}/tests/modules",
+            "args": [
+                "-test.run",
+                "TestStorageModule"
+            ],
+            "env": {
+                "ARM_SUBSCRIPTION_ID": "${env:ARM_SUBSCRIPTION_ID}"
+            },
+            "showLog": true,
+            "buildFlags": "-v"
+        }
+    ]
+}
